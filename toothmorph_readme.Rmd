@@ -1,17 +1,17 @@
 ---
 title: "toothmorph documentation"
 author: "Elizabeth Sibert"
-date: "May 23, 2018"
+date: "May 30, 2018"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 This is documentation for the functions and code written and used for tooth morphology analysis, used in the manuscript "Two pulses of morphological diversification in Pacific pelagic fish following the Cretaceous-Paleogene Mass Extinction" by Elizabeth Sibert, Matt Friedman, Pincelli Hull, Gene Hunt, and Richard Norris. The full code, data, and R Workspaces with the directory structure can be downloaded [here](http://elizabethsibert.com/toothmorph.zip). 
 
 This documentation includes information about the scripts and functions, as well as occasional workflow/examples. This set of code is what was used in the analysis of the Sibert et al manuscript, however it has been updated and generalized, and will be publisehd as a standalone R package called "ichthyoliths" (in development as of 5/23/2018). Extensive documentation and updated code is available at https://github.com/esibert/ichthyoliths. Please note that this analysis can be carried out using the (in development) ichthyoliths package as well. The toothmorph repository and documentation is mostly for reviewers who are curious about the data and want to understand and replicate the analyses we did more fully. If you have come to this site wanting to do your own analyses, we HIGHLY recommend that you go to the [ichthyoliths R package homepage](https://github.com/esibert/ichthyoliths) and work from there. It is a more flexible and cleaner set of code, and has updated ichthyolith morphological information to include a wider variety of teeth observed. 
 
-Due to GitHub file-size restrictions, only the R code and this readme.pdf are included in this repository. To download the entire set of data, code, etc., please go to http://elizabethsibert.com/toothmorph.zip and download the zipped directory that includes code as well as input and output CSV files, and RData workspaces discussed here. 
+Due to GitHub file-size restrictions, only the R code, some input CSVs, and this readme file are included in this repository. To download the entire set of data, code, etc., please go to http://elizabethsibert.com/toothmorph.zip and download the zipped directory that includes code as well as input and output CSV files, and RData workspaces discussed here. 
 
 The code included in this repository includes:
 
@@ -30,19 +30,21 @@ The code included in this repository includes:
 
 The Data (csv) files included in this R repository are: 
 
-* pairwisedist_*.csv: output from the distpairs function, saved for easy reading back into R. Read into the workspace in toothmorph_setup.R script. 
-
-* distmat_*.csv: output from the distpairs --> distmat functions, saved for easy reading back into R. Read into the workspace in toothmorph_setup.R script.
-
 * Morph3.0_596_compiled_*.csv: The original morphological input matrices that include all image objects included in the study. Select rows were removed in the .lib and .con csv files as discussed in the supplementary information and tables S1 and S2.
-
-* 596_IAR_IMAGES.csv: a CSV file containing counts of tooth and denticle abundance converted into accumulation rate. This data was previously published in Sibert and Norris 2015, PNAS, and is used for plotting tooth accumulation on the range charts. 
 
 * Morphotypes.csv: master character/codes for all identified morphotypes in the dataset
 
 * Trait*.csv: distance matrices for each character coded in the dataset.
 
-Note that throughout the code and within the input csv files, "lib" refers to a high-reworking scenario and "con" refers to a low-reworking scenario; "orig" refers to the original dataset. 
+The Data (csv) files that are not included in this R repository due to size, but are available on http://elizabethsibert.com/toothmorph.zip are:  
+
+* pairwisedist_*.csv: output from the distpairs function, saved for easy reading back into R. Read into the workspace in toothmorph_setup.R script. 
+
+* distmat_*.csv: output from the distpairs --> distmat functions, saved for easy reading back into R. Read into the workspace in toothmorph_setup.R script.
+
+* 596_IAR_IMAGES.csv: a CSV file containing counts of tooth and denticle abundance converted into accumulation rate. This data was previously published in Sibert and Norris 2015, PNAS, and is used for plotting tooth accumulation on the range charts. 
+
+Note that throughout the code and within the input csv files, "lib" refers to a high-reworking scenario and "con" refers to a low-reworking scenario; "orig" refers to the original dataset. Please see Supplemental Information for details on how these datasets were constructed.  
 
 
 The full analysis requires use of the following libraries: 
