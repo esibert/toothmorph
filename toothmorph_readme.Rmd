@@ -3,15 +3,15 @@ title: "toothmorph documentation"
 author: "Elizabeth Sibert"
 date: "May 30, 2018"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 
 This is documentation for the functions and code written and used for tooth morphology analysis, used in the manuscript "Two pulses of morphological diversification in Pacific pelagic fish following the Cretaceous-Paleogene Mass Extinction" by Elizabeth Sibert, Matt Friedman, Pincelli Hull, Gene Hunt, and Richard Norris. The full code, data, and R Workspaces with the directory structure can be downloaded [here](http://elizabethsibert.com/toothmorph.zip). 
 
 This documentation includes information about the scripts and functions, as well as occasional workflow/examples. This set of code is what was used in the analysis of the Sibert et al manuscript, however it has been updated and generalized, and will be publisehd as a standalone R package called "ichthyoliths" (in development as of 5/23/2018). Extensive documentation and updated code is available at https://github.com/esibert/ichthyoliths. Please note that this analysis can be carried out using the (in development) ichthyoliths package as well. The toothmorph repository and documentation is mostly for reviewers who are curious about the data and want to understand and replicate the analyses we did more fully. If you have come to this site wanting to do your own analyses, we HIGHLY recommend that you go to the [ichthyoliths R package homepage](https://github.com/esibert/ichthyoliths) and work from there. It is a more flexible and cleaner set of code, and has updated ichthyolith morphological information to include a wider variety of teeth observed. 
 
-Due to GitHub file-size restrictions, only the R code, some input CSVs, and this readme file are included in this repository. To download the entire set of data, code, etc., please go to http://elizabethsibert.com/toothmorph.zip and download the zipped directory that includes code as well as input and output CSV files, and RData workspaces discussed here. 
+Due to GitHub file-size restrictions, only the R code, some input CSVs, and this readme file are included in this repository. To download the entire set of data, code, etc., please go to the Dryad Digital Repository: https://doi.org/10.5061/dryad.q9h2ds8 to download the zipped 'toothmorph' directory that includes code as well as input and output CSV files, and RData workspaces discussed here. 
 
 The code included in this repository includes:
 
